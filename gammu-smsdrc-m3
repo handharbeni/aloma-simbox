@@ -1,0 +1,22 @@
+# Configuration file for Gammu SMS Daemon
+
+# Gammu library configuration, see gammurc(5)
+[gammu]
+port = /dev/ttyUSB7
+connection = at115200
+
+[smsd]
+service = sql
+logfile = /home/mhandharbeni/Documents/gammu/syslogm3
+debuglevel = 250
+RunOnReceive = /home/mhandharbeni/Documents/alomabash/shfiles.sh
+phoneid=m3
+
+Driver=native_mysql
+User=root
+Password=beni123
+PC=localhost
+Database=aloma_go
+PIN=1234
+CheckSecurity=0
+

@@ -1,0 +1,19 @@
+[gammu]
+port = /dev/ttyUSB5
+connection = at115200
+
+[smsd]
+service = sql
+logfile = /home/mhandharbeni/Documents/gammu/syslogxl
+debuglevel = 250
+RunOnReceive = /home/mhandharbeni/Documents/alomabash/shfiles.sh
+phoneid=xl
+
+Driver=native_mysql
+User=root
+Password=beni123
+PC=localhost
+Database=aloma_go
+PIN=1234
+CheckSecurity=0
+
